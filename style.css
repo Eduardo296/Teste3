@@ -1,0 +1,573 @@
+@import url(https://fonts.google.com/specimen/Raleway);
+@import url(https://fonts.google.com/specimen/Open+Sans);
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+p {
+    font-family: 'Raleway';
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/*Header*/
+.container-header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 300px;
+    padding-bottom: 100px;
+}
+.separado {
+    display: flex;
+    gap: 30px;
+}
+
+/*Header Parte 2*/
+.container-header2 {
+    padding: 0px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img img {
+    height: 550px;
+}
+h1 {
+    color: hsl(243, 87%, 12%);
+}
+p {
+    color: hsl(243, 87%, 12%);
+}
+.pesquisa {
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+header button {
+    height: 36px;
+    width: 180px;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 5px;
+    cursor: pointer; 
+    color: #fff;
+    transition: all 0.3s ease;
+}
+header button:hover {
+    background-color: hsla(224, 93%, 58%, 0.7);
+}
+
+
+/*main*/
+.main1{
+    background-image: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 8000px 2000px;
+    background-position-x: -3000px;
+    padding: 100px 300px 100px 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.mainleft {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 55px;
+}
+.resto {
+    padding-left: 35px;
+}
+.principal a {
+    text-decoration: underline;
+    color: hsl(170, 45%, 43%);
+}
+.principal a:hover {
+    color: hwb(170 24% 38% / 0.7);
+}
+.diferente {
+    font-size: 13px
+}
+.resto img {
+    height: 30px;
+    border-radius: 30px;
+}
+.perfil {
+    display: flex;
+    gap: 7px
+}
+.perfil h5 {
+    padding: 0;
+    margin: 0;
+}
+.perfil h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    color: hsla(0, 0%, 27%, 0.74);
+}
+.aspas img{
+    height: 15px;
+}
+
+/*main parte 2*/
+.main2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 300px;
+    background-color: hsl(238, 22%, 44%);
+}
+.main2 .direita {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding-right: 50px;
+}
+.pesquisa1 {
+    border-radius: 7px;
+    border: 1px solid black;
+    height: 30px;
+    width: 400px;
+}
+.main2 h1, .branco {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.main2 p {
+    color: #e4dede;
+}
+.direita { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.direita button {
+    height: 36px;
+    width: 180px;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 5px;
+    cursor: pointer; 
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.direita button:hover {
+    background-color: hsla(224, 93%, 58%, 0.7);
+}
+
+/*Rodapé*/
+footer {
+    background-color: hsl(243, 87%, 12%);
+}
+footer p {
+    color: #fff;
+}
+.all {
+    padding: 70px 300px 0px 300px;
+}
+.logo {
+    display: flex;
+    padding-bottom: 20px;
+}
+.logo img {
+    height: 40px;
+}
+.imgb {
+    filter: grayscale(100%) brightness(200%);
+    
+}
+.dois {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.row img {
+    height: 40%;
+}
+.divisao {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.espaco ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.divisao a {
+    color: #fff;
+}
+.divisao a:hover {
+    color: hsl(238, 22%, 44%);
+}
+.ultimo {
+    padding-bottom: 3px;
+}
+
+/*1400px*/
+@media screen and (max-width: 1400px) {
+    .container-header1 {
+        padding: 30px 150px;
+    }
+    .container-header2 {
+        padding: 0px 150px;
+    }
+    .main1{
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 8000px 2000px;
+        background-position-x: -3300px;
+        padding: 100px 150px 100px 150px;
+        margin-top: 150px;
+    }
+    .main2 {
+        padding: 70px 150px;
+    }
+    .all {
+        padding: 70px 150px 0px 150px;
+    }
+    .img img{
+        height: 300px;
+    }
+   
+}
+
+/*1200*/
+@media screen and (max-width: 1200px) {
+    .container-header1 {
+        padding: 30px 100px;
+    }
+    .container-header2 {
+        padding: 0px 100px;
+    }
+    .main1{
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 8000px 2000px;
+        background-position-x: -3400px;
+        padding: 100px 100px 100px 100px;
+        margin-top: 150px;
+    }
+    .main2 {
+        padding: 70px 100px;
+    }
+    .all {
+        padding: 70px 100px 0px 100px;
+    }
+    .img img{
+        height: 240px;
+    }
+    .pesquisa {
+        height: 30px;
+        width: 200px;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+    header button {
+        height: 35px;
+        width: 130px;
+    }
+    .pesquisa1 {
+        height: 30px;
+        width: 300px;
+    }
+    .direita button {
+        height: 36px;
+        width: 150px;
+    }
+}
+
+/*992*/
+@media screen and (max-width: 992px) {
+    .container-header1 {
+        padding: 30px 50px;
+    }
+    .container-header2 {
+        padding: 0px 50px;
+    }
+    .main1{
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 8000px 2000px;
+        background-position-x: -3600px;
+        padding: 50px 50px 50px 50px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main2 {
+        padding: 70px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .direita {
+        margin-right: 110px;
+    }
+    .all {
+        padding: 70px 50px 0px 50px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 310px;
+    }
+
+    .img img{
+        height: 300px;
+    }
+    .container-header2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .dois {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-right: 35px;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .row img {
+        height: 40%;
+    }
+    .divisao {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .espaco ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .espaco {
+        width: 40%;
+    }
+}
+
+/*768*/
+@media screen and (max-width: 768px) {
+    .separado {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container-header1 {
+        padding: 30px 10px;
+        display: flex;
+        align-items: center;
+    }
+    .container-header2 {
+        padding: 0px 10px;
+    }
+    .main1{
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 8000px 2000px;
+        background-position-x: -3700px;
+        padding: 50px 10px 50px 10px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main2 {
+        padding: 70px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .direita {
+        margin-right: 110px;
+    }
+    .all {
+        padding: 70px 10px 0px 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 310px;
+    }
+    .img img{
+        height: 345px;
+    }
+    .mainleft {
+        padding: 0px 45px;
+    }
+}
+
+/*576*/
+@media screen and (max-width: 576px) {
+    .separado {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo1 {
+        display: none;
+    }
+    .container-header1 {
+        padding: 30px 10px;
+        display: block;
+    }
+    .container-header2 {
+        padding: 0px 10px;
+    }
+    .main1{
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 8000px 2000px;
+        background-position-x: -3800px;
+        padding: 50px 10px 50px 10px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main2 {
+        padding: 70px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .direita {
+        margin-right: 0px;
+    }
+    .all {
+        padding: 70px 10px 0px 10px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 200px;
+    }
+    .logo img {
+        height: 30px;
+    }
+    .img img{
+        height: 205px;
+    }
+    .espaco {
+        width: 40%;
+    }
+    .espaco li a {
+        font-size: 10px;
+    }
+    .divisao p {
+        font-size: 10px;
+    }
+}
+
+/*353*/
+@media screen and (max-width: 353px) {
+    .separado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo1 {
+        display: none;
+    }
+    .container-header1 {
+        padding: 30px 5px;
+        display: block;
+    }
+    .container-header2 {
+        padding: 0px 5px;
+    }
+    .main1{
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 8000px 2000px;
+        background-position-x: -3900px;
+        padding: 50px 5px 50px 5px;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main2 {
+        padding: 70px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dois {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 0px;
+    }
+    .direita {
+        margin-right: 0px;
+    }
+    .pesquisa {
+        height: 30px;
+        width: 180px;
+        margin-bottom: 5px;
+    }
+    header button {
+        height: 36px;
+        width: 80px;
+    }
+    .pesquisa1 {
+        height: 30px;
+        width: 150px;
+    }
+    .direita button {
+        width: 100px;
+    }
+    .all {
+        padding: 70px 5px 0px 5px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 25px;
+    }
+    .logo img {
+        height: 30px;
+    }
+    .img img{
+        height: 140px;
+    }
+    .espaco {
+        display: none;
+        width: 40%;
+    }
+    .espaco li a {
+        font-size: 10px;
+    }
+    .divisao p {
+        font-size: 10px;
+    }
+    .mainleft {
+        padding: 0px;
+    }
+}
